@@ -124,1736 +124,1738 @@
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Registro</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  </head>
-  <header class="header">
-    <!--<nav>-->
-    <?php// include('nav_login.php'); ?>
-  </header>
-  <body>
-    <div class="container">
-      <header>Consejo Comunal<br></bt>Jose Leonardo Chirinos</header>
-      <div class="progress-bar">
-        <div class="step">
-          <p class="previ-1 prev">Jefe de familia</p>
-          <div class="bullet">
-            <span>1</span>
-          </div>
-          <div class="check fas fa-check"></div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registro</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<header class="header">
+  <?php include('nav_login.php'); ?>
+</header>
+
+<body>
+  <div class="container">
+    <header>Consejo Comunal<br></bt>Jose Leonardo Chirinos</header>
+    <div class="progress-bar">
+      <div class="step">
+        <p class="previ-1 prev">Jefe de familia</p>
+        <div class="bullet">
+          <span>1</span>
         </div>
-        <div class="step">
-          <p class="previ-2 prev">Cargas Familiares</p>
-          <div class="bullet">
-            <span>2</span>
-          </div>
-          <div class="check fas fa-check"></div>
-        </div>
-        <div class="step">
-          <p class="previ-3 prev">Datos de la Vivienda</p>
-          <div class="bullet">
-            <span>3</span>
-          </div>
-          <div class="check fas fa-check"></div>
-        </div>
-        <div class="step">
-          <p class="previ-4 prev">Enfermedades</p>
-          <div class="bullet">
-            <span>4</span>
-          </div>
-          <div class="check fas fa-check"></div>
-        </div>
-        <div class="step">
-          <p class="previ-5 prev">Condiciones de la vivienda</p>
-          <div class="bullet">
-            <span>5</span>
-          </div>
-          <div class="check fas fa-check"></div>
-        </div>
-        <div class="step">
-          <p class="nexti-4 next">Participación Social</p>
-          <div class="bullet">
-            <span>6</span>
-          </div>
-          <div class="check fas fa-check"></div>
-        </div>
+        <div class="check fas fa-check"></div>
       </div>
-      <!-- form-->
-      <div class="form-outer">
-        <div class="page slide-page">
-          <form action="#" name="jose_leonardo_chirino" method="post">
-            <div class="title">Jefe de Familia</div>
-            <div class="field">
-              <div class="label" >Nombre(s)</div>
-              <input type="text" name="nombre" id="nombre" autofocus>
-            </div>
-            <div class="field">
-              <div class="label" >Apellido(s)</div>
-              <input type="text" name="apellido" id="apellido">
-            </div>
-            <div class="field">
-              <div class="label">Número de Cédula</div>
-              <input type="number" name="cedula" id="cedula">
-            </div>
-            <div class="field">
-              <div class="label">Género</div>
-              <select id="genero" name="genero" multiple multiselect-search="true">
-
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Código del Carnet de la patria</div>
-              <input type="number" name="codigo_carnet" id="codigo_carnet">
-            </div>
-            <div class="field">
-              <div class="label">Serial del Carnet de la patria </div>
-              <input type="number" name="serial_carnet" id="serial_carnet">
-            </div>
-            <div class="field">
-              <div class="label" >Número de Teléfono</div>
-              <input type="tel" name="numero_telefono" id="numero_telefono">
-            </div>
-            <div class="field">
-              <div class="label">Número de Teléfono de Habitación</div>
-              <input type="tel" name="numero_telefonocasa">
-            </div>
-            <div class="field">
-              <div class="label">Fecha de Nacimiento</div>
-              <input type="datetime-local" name="fecha_nacimiento" id="fecha_nacimiento">
-            </div>
-            <div class="field">
-              <div class="label">Correo electrónico</div>
-              <input type="email" name="correo" id="correo">
-            </div>
-            <div class="field">
-              <div class="label">Estado Civil</div>
-              <select id="estado_civil" name="estado_civil" multiple multiselect-search="true">
-
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Grado de Instrucción</div>
-              <select id="grado_instruccion" name="grado_instruccion" multiple multiselect-search="true">
-
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Sector donde trabaja</div>
-              <select id="sector_trabajo" name="sector_trabajo" multiple multiselect-search="true">
-
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Ocupación</div>
-              <input type="text" name="ocupacion" id="ocupacion">
-            </div>
-            <div class="field">
-              <div class="label">¿Es pensionado/a?</div>
-              <select id="pensionado" name="pensionado">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Si</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">¿Es discapacitado/a?</div>
-              <select id="discapacitado" name="discapacitado">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Si</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">¿Es incapacitado/a?</div>
-              <select id="incapacitado" name="incapacitado">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Si</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-
-            <div class="field">
-              <div class="label">¿Se encuentra inscrito en el CNE?</div>
-              <select id="cne" name="cne">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Si</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">¿Realiza actividad comercial en la vivienda?</div>
-              <select id="actividad_vivienda" name="actividad_vivienda">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Si</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field" id="showactividadvivienda" style="display: none;">
-              <div class="label">¿Qué tipo de actividad realiza?</div>
-              <input type="text" name="tipo_actividad" id="tipo_actividad">
-            </div>
-            <div class="field">
-              <div class="label">¿Cuántas cargas familiares tiene?</div>
-              <sinput type="number" id="cargas_familiares" class="cargas_familiares" name="cargas_familiares">
-            </div>
-            <div class="field">
-              <button type="submit" class="firstNext next" name="reg-jefe.php">Siguiente</button>
-            </div>
-          </form>
+      <div class="step">
+        <p class="previ-2 prev">Cargas Familiares</p>
+        <div class="bullet">
+          <span>2</span>
         </div>
-        <!--pag2
-        <div class="page"> 
-          <div id="primeracargapage" style="display: none;">
-            <form action="reg-carga.php" method="post">
-              <div class="title">Primera Carga Familiar</div>
-              <div class="field">
-                <div class="label">Nombre(s)</div>
-                <input type="text" id="nombre_carga" name="nombre_carga" autofocus>
-              </div>
-              <div class="field">
-                <div class="label">Apellido(s)</div>
-                <input type="text" id="apellido_carga" name="apellido_carga">
-              </div>
-              <div class="field">
-                <div class="label">Género</div>
-                <select id="genero_carga" name="genero_carga">
-                  <option selected="true" disabled="disabled">Seleccione</option>
-                  <option value="femenino">Femenino</option>
-                  <option value="masculino">Masculino</option>
-                </select>
-              </div>
-              <div class="field">
-                <div class="label">Número de Cédula</div>
-                <input type="number" id="cedula_carga"name="cedula_carga">
-              </div>
-              <div class="field">
-                <div class="label">Fecha de Nacimiento</div>
-                <input type="datetime-local" id="fecha_nacimiento_carga"name="fecha_nacimiento_carga">
-              </div>
-              <div class="field">
-                <div class="label">Discapacidad</div>
-                <select id="discapacitado_carga"Name="discapacitado_carga">
-                  <option selected="true" disabled="disabled">Seleccione</option>
-                  <option value="si">Sí</option>
-                  <option value="no">No</option>
-                </select>
-              </div>
-              <div class="field">
-                <div class="label">Incapacidad</div>
-                <select id="incapacitado_carga"name="incapacitado_carga">
-                  <option selected="true" disabled="disabled">Seleccione</option>
-                  <option value="si">Sí</option>
-                  <option value="no">No</option>
-                </select>
-              </div>
-              <div class="field">
-                <div class="label">Embarazo Temprano?</div>
-                <select id="embarazo_temprano_carga" name="embarazo_temprano_carga">
-                  <option selected="true" disabled="disabled">Seleccione</option>
-                  <option value="si">Sí</option>
-                  <option value="no">No</option>
-                </select>
-              </div>
-              <div class="field">
-                <div class="label">Parentesco</div>
-                <select id="parentesco_carga"name="parentesco_carga" multiple multiselect-search="true">
-
-                </select>
-              </div>
-              <div class="field">
-                <div class="label">Grado de Instrucción</div>
-                <select id="instruccion_carga"name="instruccion_carga" multiple multiselect-search="true">
-
-                </select>
-              </div>
-              <div class="field">
-                <div class="label">Profesión?</div>
-                <input type="text" id="profesion_carga"name="profesion_carga">
-              </div>
-              <div class="field">
-                <div class="label">Ingreso Mensual</div>
-                <input type="number" id="ingreso_carga"name="ingreso_carga">
-              </div>
-              <div class="field">
-                <div class="label">Inscrita/o en el CNE?</div>
-                <select id="cne_carga"name="cne_carga">
-                  <option selected="true" disabled="disabled">Seleccione</option>
-                  <option value="si">Sí</option>
-                  <option value="no">No</option>
-                </select>
-              </div>
-              <div class="field">
-                <div class="label">Pensionada/o?</div>
-                <select id="pensionado_carga" name="pensionado_carga">
-                  <option selected="true" disabled="disabled">Seleccione</option>
-                  <option value="si">Sí</option>
-                  <option value="no">No</option>
-                </select>
-              </div>
-              <div class="field">
-                <div class="label">Posee carnet de la Patria?</div>
-                  <select id="carnet_carga" name="carnet_carga">
-                  <option selected="true" disabled="disabled">Seleccione</option>
-                  <option value="si">Sí</option>
-                  <option value="no">No</option>
-                </select>
-              </div>
-              <div class="field" id="showcargacarnetcod" style="display: none;">
-                <div class="label" ">Código del Carnet de la patria</div>
-                <input type="number" id="codigo_carnet_carga" name="codigo_carnet_carga">
-              </div>
-              <div class="field" id="showcargacarnetser" style="display: none;">
-                <div class="label" >Serial del Carnet de la patria </div>
-                <input type="number" id="serial_carnet_carga" name="serial_carnet_carga">
-              </div>
-              <div class="field btns">
-                <button type="submit" name="reg-carga.php" class="save-carga">Guardar</button>
-              </div>
-            </form>   
-          </div>
-
-          <div id="segundacargapage" style="display: none;">
-            <form action="reg-carga.php" method="post">
-            <div class="title">Segunda Carga Familiar</div>
-            <div class="field">
-              <div class="label">Nombre(s)</div>
-              <input type="text" id="nombre_carga" name="nombre_carga" autofocus>
-            </div>
-            <div class="field">
-              <div class="label">Apellido(s)</div>
-              <input type="text" id="apellido_carga" name="apellido_carga">
-            </div>
-            <div class="field">
-              <div class="label">Género</div>
-              <select id="genero_carga" name="genero_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="femenino">Femenino</option>
-                <option value="masculino">Masculino</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Número de Cédula</div>
-              <input type="number" id="cedula_carga"name="cedula_carga">
-            </div>
-            <div class="field">
-              <div class="label">Fecha de Nacimiento</div>
-              <input type="datetime-local" id="fecha_nacimiento_carga"name="fecha_nacimiento_carga">
-            </div>
-            <div class="field">
-              <div class="label">Discapacidad</div>
-              <select id="discapacitado_carga"Name="discapacitado_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Incapacidad</div>
-              <select id="incapacitado_carga"name="incapacitado_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Embarazo Temprano?</div>
-              <select id="embarazo_temprano_carga" name="embarazo_temprano_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Parentesco</div>
-              <select id="parentesco_carga"name="parentesco_carga" multiple multiselect-search="true">
-
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Grado de Instrucción</div>
-              <select id="instruccion_carga"name="instruccion_carga" multiple multiselect-search="true">
-
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Profesión?</div>
-              <input type="text" id="profesion_carga"name="profesion_carga">
-            </div>
-            <div class="field">
-              <div class="label">Ingreso Mensual</div>
-              <input type="number" id="ingreso_carga"name="ingreso_carga">
-            </div>
-            <div class="field">
-              <div class="label">Inscrita/o en el CNE?</div>
-              <select id="cne_carga"name="cne_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Pensionada/o?</div>
-              <select id="pensionado_carga" name="pensionado_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Posee carnet de la Patria?</div>
-                <select id="carnet_carga" name="carnet_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field" id="showcargacarnetcod" style="display: none;">
-              <div class="label" ">Código del Carnet de la patria</div>
-              <input type="number" id="codigo_carnet_carga" name="codigo_carnet_carga">
-            </div>
-            <div class="field" id="showcargacarnetser" style="display: none;">
-              <div class="label" >Serial del Carnet de la patria </div>
-              <input type="number" id="serial_carnet_carga" name="serial_carnet_carga">
-            </div>
-            <div class="field btns">
-              <button type="submit" name="reg-carga.php" class="save-carga">Guardar</button>
-            </div>
-            </form>
-          </div>
-
-          <div id="terceracargapage" style="display: none;">
-            <form action="reg-carga.php" method="post">
-            <div class="title">Tercera Carga Familiar</div>
-            <div class="field">
-              <div class="label">Nombre(s)</div>
-              <input type="text" id="nombre_carga" name="nombre_carga" autofocus>
-            </div>
-            <div class="field">
-              <div class="label">Apellido(s)</div>
-              <input type="text" id="apellido_carga" name="apellido_carga">
-            </div>
-            <div class="field">
-              <div class="label">Género</div>
-              <select id="genero_carga" name="genero_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="femenino">Femenino</option>
-                <option value="masculino">Masculino</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Número de Cédula</div>
-              <input type="number" id="cedula_carga"name="cedula_carga">
-            </div>
-            <div class="field">
-              <div class="label">Fecha de Nacimiento</div>
-              <input type="datetime-local" id="fecha_nacimiento_carga"name="fecha_nacimiento_carga">
-            </div>
-            <div class="field">
-              <div class="label">Discapacidad</div>
-              <select id="discapacitado_carga"Name="discapacitado_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Incapacidad</div>
-              <select id="incapacitado_carga"name="incapacitado_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Embarazo Temprano?</div>
-              <select id="embarazo_temprano_carga" name="embarazo_temprano_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Parentesco</div>
-              <select id="parentesco_carga"name="parentesco_carga" multiple multiselect-search="true">
-
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Grado de Instrucción</div>
-              <select id="instruccion_carga"name="instruccion_carga" multiple multiselect-search="true">
-
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Profesión?</div>
-              <input type="text" id="profesion_carga"name="profesion_carga">
-            </div>
-            <div class="field">
-              <div class="label">Ingreso Mensual</div>
-              <input type="number" id="ingreso_carga"name="ingreso_carga">
-            </div>
-            <div class="field">
-              <div class="label">Inscrita/o en el CNE?</div>
-              <select id="cne_carga"name="cne_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Pensionada/o?</div>
-              <select id="pensionado_carga" name="pensionado_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Posee carnet de la Patria?</div>
-                <select id="carnet_carga" name="carnet_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field" id="showcargacarnetcod" style="display: none;">
-              <div class="label" ">Código del Carnet de la patria</div>
-              <input type="number" id="codigo_carnet_carga" name="codigo_carnet_carga">
-            </div>
-            <div class="field" id="showcargacarnetser" style="display: none;">
-              <div class="label" >Serial del Carnet de la patria </div>
-              <input type="number" id="serial_carnet_carga" name="serial_carnet_carga">
-            </div>
-            <div class="field btns">
-              <button type="submit" name="reg-carga.php" class="save-carga">Guardar</button>
-            </div>
-            </form>
-          </div>
-
-          <div id="cuartacargapage" style="display: none;">
-            <form action="reg-carga.php" method="post">
-            <div class="field">
-              <div class="label">Nombre(s)</div>
-              <input type="text" id="nombre_carga" name="nombre_carga" autofocus>
-            </div>
-            <div class="field">
-              <div class="label">Apellido(s)</div>
-              <input type="text" id="apellido_carga" name="apellido_carga">
-            </div>
-            <div class="field">
-              <div class="label">Género</div>
-              <select id="genero_carga" name="genero_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="femenino">Femenino</option>
-                <option value="masculino">Masculino</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Número de Cédula</div>
-              <input type="number" id="cedula_carga"name="cedula_carga">
-            </div>
-            <div class="field">
-              <div class="label">Fecha de Nacimiento</div>
-              <input type="datetime-local" id="fecha_nacimiento_carga"name="fecha_nacimiento_carga">
-            </div>
-            <div class="field">
-              <div class="label">Discapacidad</div>
-              <select id="discapacitado_carga"Name="discapacitado_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Incapacidad</div>
-              <select id="incapacitado_carga"name="incapacitado_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Embarazo Temprano?</div>
-              <select id="embarazo_temprano_carga" name="embarazo_temprano_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Parentesco</div>
-              <select id="parentesco_carga"name="parentesco_carga" multiple multiselect-search="true">
-
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Grado de Instrucción</div>
-              <select id="instruccion_carga"name="instruccion_carga" multiple multiselect-search="true">
-
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Profesión?</div>
-              <input type="text" id="profesion_carga"name="profesion_carga">
-            </div>
-            <div class="field">
-              <div class="label">Ingreso Mensual</div>
-              <input type="number" id="ingreso_carga"name="ingreso_carga">
-            </div>
-            <div class="field">
-              <div class="label">Inscrita/o en el CNE?</div>
-              <select id="cne_carga"name="cne_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Pensionada/o?</div>
-              <select id="pensionado_carga" name="pensionado_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Posee carnet de la Patria?</div>
-                <select id="carnet_carga" name="carnet_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field" id="showcargacarnetcod" style="display: none;">
-              <div class="label" ">Código del Carnet de la patria</div>
-              <input type="number" id="codigo_carnet_carga" name="codigo_carnet_carga">
-            </div>
-            <div class="field" id="showcargacarnetser" style="display: none;">
-              <div class="label" >Serial del Carnet de la patria </div>
-              <input type="number" id="serial_carnet_carga" name="serial_carnet_carga">
-            </div>
-            <div class="field btns">
-              <button type="submit" name="reg-carga.php" class="save-carga">Guardar</button>
-            </div>
-            </form>
-          </div>
-
-          <div id="quintacargapage" style="display: none;">
-            <form action="reg-carga.php" method="post">
-            <div class="title">Quinta Carga Familiar</div>
-            <div class="field">
-              <div class="label">Nombre(s)</div>
-              <input type="text" id="nombre_carga" name="nombre_carga" autofocus>
-            </div>
-            <div class="field">
-              <div class="label">Apellido(s)</div>
-              <input type="text" id="apellido_carga" name="apellido_carga">
-            </div>
-            <div class="field">
-              <div class="label">Género</div>
-              <select id="genero_carga" name="genero_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="femenino">Femenino</option>
-                <option value="masculino">Masculino</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Número de Cédula</div>
-              <input type="number" id="cedula_carga"name="cedula_carga">
-            </div>
-            <div class="field">
-              <div class="label">Fecha de Nacimiento</div>
-              <input type="datetime-local" id="fecha_nacimiento_carga"name="fecha_nacimiento_carga">
-            </div>
-            <div class="field">
-              <div class="label">Discapacidad</div>
-              <select id="discapacitado_carga"Name="discapacitado_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Incapacidad</div>
-              <select id="incapacitado_carga"name="incapacitado_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Embarazo Temprano?</div>
-              <select id="embarazo_temprano_carga" name="embarazo_temprano_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Parentesco</div>
-              <select id="parentesco_carga"name="parentesco_carga" multiple multiselect-search="true">
-
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Grado de Instrucción</div>
-              <select id="instruccion_carga"name="instruccion_carga" multiple multiselect-search="true">
-
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Profesión?</div>
-              <input type="text" id="profesion_carga"name="profesion_carga">
-            </div>
-            <div class="field">
-              <div class="label">Ingreso Mensual</div>
-              <input type="number" id="ingreso_carga"name="ingreso_carga">
-            </div>
-            <div class="field">
-              <div class="label">Inscrita/o en el CNE?</div>
-              <select id="cne_carga"name="cne_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Pensionada/o?</div>
-              <select id="pensionado_carga" name="pensionado_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Posee carnet de la Patria?</div>
-                <select id="carnet_carga" name="carnet_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field" id="showcargacarnetcod" style="display: none;">
-              <div class="label" ">Código del Carnet de la patria</div>
-              <input type="number" id="codigo_carnet_carga" name="codigo_carnet_carga">
-            </div>
-            <div class="field" id="showcargacarnetser" style="display: none;">
-              <div class="label" >Serial del Carnet de la patria </div>
-              <input type="number" id="serial_carnet_carga" name="serial_carnet_carga">
-            </div>
-            <div class="field btns">
-              <button type="submit" name="reg-carga.php" class="save-carga">Guardar</button>
-            </div>
-            </form>
-          </div>
-
-          <div id="sextacargapage" style="display: none;">
-            <form action="reg-carga.php" method="post">
-            <div class="title">Sexta Carga Familiar</div>
-            <div class="field">
-              <div class="label">Nombre(s)</div>
-              <input type="text" id="nombre_carga" name="nombre_carga" autofocus>
-            </div>
-            <div class="field">
-              <div class="label">Apellido(s)</div>
-              <input type="text" id="apellido_carga" name="apellido_carga">
-            </div>
-            <div class="field">
-              <div class="label">Género</div>
-              <select id="genero_carga" name="genero_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="femenino">Femenino</option>
-                <option value="masculino">Masculino</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Número de Cédula</div>
-              <input type="number" id="cedula_carga"name="cedula_carga">
-            </div>
-            <div class="field">
-              <div class="label">Fecha de Nacimiento</div>
-              <input type="datetime-local" id="fecha_nacimiento_carga"name="fecha_nacimiento_carga">
-            </div>
-            <div class="field">
-              <div class="label">Discapacidad</div>
-              <select id="discapacitado_carga"Name="discapacitado_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Incapacidad</div>
-              <select id="incapacitado_carga"name="incapacitado_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Embarazo Temprano?</div>
-              <select id="embarazo_temprano_carga" name="embarazo_temprano_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Parentesco</div>
-              <select id="parentesco_carga"name="parentesco_carga" multiple multiselect-search="true">
-
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Grado de Instrucción</div>
-              <select id="instruccion_carga"name="instruccion_carga" multiple multiselect-search="true">
-
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Profesión?</div>
-              <input type="text" id="profesion_carga"name="profesion_carga">
-            </div>
-            <div class="field">
-              <div class="label">Ingreso Mensual</div>
-              <input type="number" id="ingreso_carga"name="ingreso_carga">
-            </div>
-            <div class="field">
-              <div class="label">Inscrita/o en el CNE?</div>
-              <select id="cne_carga"name="cne_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Pensionada/o?</div>
-              <select id="pensionado_carga" name="pensionado_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Posee carnet de la Patria?</div>
-                <select id="carnet_carga" name="carnet_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field" id="showcargacarnetcod" style="display: none;">
-              <div class="label" ">Código del Carnet de la patria</div>
-              <input type="number" id="codigo_carnet_carga" name="codigo_carnet_carga">
-            </div>
-            <div class="field" id="showcargacarnetser" style="display: none;">
-              <div class="label" >Serial del Carnet de la patria </div>
-              <input type="number" id="serial_carnet_carga" name="serial_carnet_carga">
-            </div>
-            <div class="field btns">
-              <button type="submit" name="reg-carga.php" class="save-carga">Guardar</button>
-            </div>
-            </form>
-          </div>
-
-          <div id="septimacargapage" style="display: none;">
-            <form action="reg-carga.php" method="post">
-            <div class="title">Séptima Carga Familiar</div>
-            <div class="field">
-              <div class="label">Nombre(s)</div>
-              <input type="text" id="nombre_carga" name="nombre_carga" autofocus>
-            </div>
-            <div class="field">
-              <div class="label">Apellido(s)</div>
-              <input type="text" id="apellido_carga" name="apellido_carga">
-            </div>
-            <div class="field">
-              <div class="label">Género</div>
-              <select id="genero_carga" name="genero_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="femenino">Femenino</option>
-                <option value="masculino">Masculino</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Número de Cédula</div>
-              <input type="number" id="cedula_carga"name="cedula_carga">
-            </div>
-            <div class="field">
-              <div class="label">Fecha de Nacimiento</div>
-              <input type="datetime-local" id="fecha_nacimiento_carga"name="fecha_nacimiento_carga">
-            </div>
-            <div class="field">
-              <div class="label">Discapacidad</div>
-              <select id="discapacitado_carga"Name="discapacitado_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Incapacidad</div>
-              <select id="incapacitado_carga"name="incapacitado_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Embarazo Temprano?</div>
-              <select id="embarazo_temprano_carga" name="embarazo_temprano_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Parentesco</div>
-              <select id="parentesco_carga"name="parentesco_carga" multiple multiselect-search="true">
-
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Grado de Instrucción</div>
-              <select id="instruccion_carga"name="instruccion_carga" multiple multiselect-search="true">
-
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Profesión?</div>
-              <input type="text" id="profesion_carga"name="profesion_carga">
-            </div>
-            <div class="field">
-              <div class="label">Ingreso Mensual</div>
-              <input type="number" id="ingreso_carga"name="ingreso_carga">
-            </div>
-            <div class="field">
-              <div class="label">Inscrita/o en el CNE?</div>
-              <select id="cne_carga"name="cne_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Pensionada/o?</div>
-              <select id="pensionado_carga" name="pensionado_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Posee carnet de la Patria?</div>
-                <select id="carnet_carga" name="carnet_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field" id="showcargacarnetcod" style="display: none;">
-              <div class="label" ">Código del Carnet de la patria</div>
-              <input type="number" id="codigo_carnet_carga" name="codigo_carnet_carga">
-            </div>
-            <div class="field" id="showcargacarnetser" style="display: none;">
-              <div class="label" >Serial del Carnet de la patria </div>
-              <input type="number" id="serial_carnet_carga" name="serial_carnet_carga">
-            </div>
-            <div class="field btns">
-              <button type="submit" name="reg-carga.php" class="save-carga">Guardar</button>
-            </div>
-            </form>
-          </div>
-
-          <div id="octavacargapage" style="display: none;">
-            <form action="reg-carga.php" method="post">
-            <div class="title">Octava Carga Familiar</div>
-            <div class="field">
-              <div class="label">Nombre(s)</div>
-              <input type="text" id="nombre_carga" name="nombre_carga" autofocus>
-            </div>
-            <div class="field">
-              <div class="label">Apellido(s)</div>
-              <input type="text" id="apellido_carga" name="apellido_carga">
-            </div>
-            <div class="field">
-              <div class="label">Género</div>
-              <select id="genero_carga" name="genero_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="femenino">Femenino</option>
-                <option value="masculino">Masculino</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Número de Cédula</div>
-              <input type="number" id="cedula_carga"name="cedula_carga">
-            </div>
-            <div class="field">
-              <div class="label">Fecha de Nacimiento</div>
-              <input type="datetime-local" id="fecha_nacimiento_carga"name="fecha_nacimiento_carga">
-            </div>
-            <div class="field">
-              <div class="label">Discapacidad</div>
-              <select id="discapacitado_carga"Name="discapacitado_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Incapacidad</div>
-              <select id="incapacitado_carga"name="incapacitado_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Embarazo Temprano?</div>
-              <select id="embarazo_temprano_carga" name="embarazo_temprano_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Parentesco</div>
-              <select id="parentesco_carga"name="parentesco_carga" multiple multiselect-search="true">
-
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Grado de Instrucción</div>
-              <select id="instruccion_carga"name="instruccion_carga" multiple multiselect-search="true">
-
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Profesión?</div>
-              <input type="text" id="profesion_carga"name="profesion_carga">
-            </div>
-            <div class="field">
-              <div class="label">Ingreso Mensual</div>
-              <input type="number" id="ingreso_carga"name="ingreso_carga">
-            </div>
-            <div class="field">
-              <div class="label">Inscrita/o en el CNE?</div>
-              <select id="cne_carga"name="cne_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Pensionada/o?</div>
-              <select id="pensionado_carga" name="pensionado_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Posee carnet de la Patria?</div>
-                <select id="carnet_carga" name="carnet_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field" id="showcargacarnetcod" style="display: none;">
-              <div class="label" ">Código del Carnet de la patria</div>
-              <input type="number" id="codigo_carnet_carga" name="codigo_carnet_carga">
-            </div>
-            <div class="field" id="showcargacarnetser" style="display: none;">
-              <div class="label" >Serial del Carnet de la patria </div>
-              <input type="number" id="serial_carnet_carga" name="serial_carnet_carga">
-            </div>
-            <div class="field btns">
-              <button type="submit" name="reg-carga.php" class="save-carga">Guardar</button>
-            </div>
-          </form>
-          </div>
-
-          <div id="novenacargapage" style="display: none;">
-            <form action="reg-carga.php" method="post">
-            <div class="title">Novena Carga Familiar</div>
-            <div class="field">
-              <div class="label">Nombre(s)</div>
-              <input type="text" id="nombre_carga" name="nombre_carga" autofocus>
-            </div>
-            <div class="field">
-              <div class="label">Apellido(s)</div>
-              <input type="text" id="apellido_carga" name="apellido_carga">
-            </div>
-            <div class="field">
-              <div class="label">Género</div>
-              <select id="genero_carga" name="genero_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="femenino">Femenino</option>
-                <option value="masculino">Masculino</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Número de Cédula</div>
-              <input type="number" id="cedula_carga"name="cedula_carga">
-            </div>
-            <div class="field">
-              <div class="label">Fecha de Nacimiento</div>
-              <input type="datetime-local" id="fecha_nacimiento_carga"name="fecha_nacimiento_carga">
-            </div>
-            <div class="field">
-              <div class="label">Discapacidad</div>
-              <select id="discapacitado_carga"Name="discapacitado_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Incapacidad</div>
-              <select id="incapacitado_carga"name="incapacitado_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Embarazo Temprano?</div>
-              <select id="embarazo_temprano_carga" name="embarazo_temprano_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Parentesco</div>
-              <select id="parentesco_carga"name="parentesco_carga" multiple multiselect-search="true">
-
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Grado de Instrucción</div>
-              <select id="instruccion_carga"name="instruccion_carga" multiple multiselect-search="true">
-
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Profesión?</div>
-              <input type="text" id="profesion_carga"name="profesion_carga">
-            </div>
-            <div class="field">
-              <div class="label">Ingreso Mensual</div>
-              <input type="number" id="ingreso_carga"name="ingreso_carga">
-            </div>
-            <div class="field">
-              <div class="label">Inscrita/o en el CNE?</div>
-              <select id="cne_carga"name="cne_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Pensionada/o?</div>
-              <select id="pensionado_carga" name="pensionado_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Posee carnet de la Patria?</div>
-                <select id="carnet_carga" name="carnet_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field" id="showcargacarnetcod" style="display: none;">
-              <div class="label" ">Código del Carnet de la patria</div>
-              <input type="number" id="codigo_carnet_carga" name="codigo_carnet_carga">
-            </div>
-            <div class="field" id="showcargacarnetser" style="display: none;">
-              <div class="label" >Serial del Carnet de la patria </div>
-              <input type="number" id="serial_carnet_carga" name="serial_carnet_carga">
-            </div>
-            <div class="field btns">
-              <button type="submit" name="reg-carga.php" class="save-carga">Guardar</button>
-            </div>
-            </form>
-          </div>
-
-          <div id="decimacargapage" style="display: none;">
-            <form action="reg-carga.php" method="post">
-            <div class="title">Décima Carga Familiar</div>
-            <div class="field">
-              <div class="label">Nombre(s)</div>
-              <input type="text" id="nombre_carga" name="nombre_carga" autofocus>
-            </div>
-            <div class="field">
-              <div class="label">Apellido(s)</div>
-              <input type="text" id="apellido_carga" name="apellido_carga">
-            </div>
-            <div class="field">
-              <div class="label">Género</div>
-              <select id="genero_carga" name="genero_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="femenino">Femenino</option>
-                <option value="masculino">Masculino</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Número de Cédula</div>
-              <input type="number" id="cedula_carga"name="cedula_carga">
-            </div>
-            <div class="field">
-              <div class="label">Fecha de Nacimiento</div>
-              <input type="datetime-local" id="fecha_nacimiento_carga"name="fecha_nacimiento_carga">
-            </div>
-            <div class="field">
-              <div class="label">Discapacidad</div>
-              <select id="discapacitado_carga"Name="discapacitado_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Incapacidad</div>
-              <select id="incapacitado_carga"name="incapacitado_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Embarazo Temprano?</div>
-              <select id="embarazo_temprano_carga" name="embarazo_temprano_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Parentesco</div>
-              <select id="parentesco_carga"name="parentesco_carga" multiple multiselect-search="true">
-
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Grado de Instrucción</div>
-              <select id="instruccion_carga"name="instruccion_carga" multiple multiselect-search="true">
-
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Profesión?</div>
-              <input type="text" id="profesion_carga"name="profesion_carga">
-            </div>
-            <div class="field">
-              <div class="label">Ingreso Mensual</div>
-              <input type="number" id="ingreso_carga"name="ingreso_carga">
-            </div>
-            <div class="field">
-              <div class="label">Inscrita/o en el CNE?</div>
-              <select id="cne_carga"name="cne_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Pensionada/o?</div>
-              <select id="pensionado_carga" name="pensionado_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Posee carnet de la Patria?</div>
-                <select id="carnet_carga" name="carnet_carga">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field" id="showcargacarnetcod" style="display: none;">
-              <div class="label">Código del Carnet de la patria</div>
-              <input type="number" id="codigo_carnet_carga" name="codigo_carnet_carga">
-            </div>
-            <div class="field" id="showcargacarnetser" style="display: none;">
-              <div class="label" >Serial del Carnet de la patria </div>
-              <input type="number" id="serial_carnet_carga" name="serial_carnet_carga">
-            </div>
-            <div class="field btns">
-              <button type="submit" name="reg-carga.php" class="save-carga">Guardar</button>
-            </div>
-            </form>
-          </div>
-          
-          <div class="field btns">
-            <button class="prev-1 prev">Atrás</button>
-            <button type="submit" class="next-1 next">Siguiente</button>
-          </div>
+        <div class="check fas fa-check"></div>
+      </div>
+      <div class="step">
+        <p class="previ-3 prev">Datos de la Vivienda</p>
+        <div class="bullet">
+          <span>3</span>
         </div>
-          <!--pag3-->
-          <!--<div class="page">
-          <form action="reg-vivienda.php" method="post">
-            <div class="title">Datos de la Vivienda</div>
-            <div class="field">
-              <div class="label">Condiciones del Terreno</div>
-              <input type="text" required autofocus>
-            </div>
-            <div class="field">
-              <div class="label">Forma de Tenencia</div>
-              <input type="text" required>
-            </div>
-            <div class="field">
-              <div class="label">Tipo de Vivienda</div>
-              <input type="text" required>
-            </div>
-            <div class="field">
-              <div class="label">Cuántas habitaciones tiene?</div>
-              <select id="habitaciones" name="habitaciones" required>
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Condiciones de la Vivienda</div>
-              <select id="condiciones_vivienda" name="condiciones_vivienda" required>
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="bloque">De Bloque</option>
-                <option value="lata">De Lata </option>
-                <option value="madera">De Madera</option>
-                <option value="barro">De Barro</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Tienes mascotas?</div>
-              <select id="masc" required>
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field" id="showmascotas" style="display: none;">
-              <div class="label">Tipo de Mascota(s)</div>
-              <!--<select id="mascotas" name="mascotas" multiple>
-                <label style="font-size: 18px;"><input type="checkbox" style="height: 12px; width: 12px;margin-right: 4px;" name="perro" value="perro">Perro</label>
-                <label style="font-size: 18px;"><input type="checkbox" style="height: 12px; width: 12px;margin-right: 4px;" name="gato" value="gato">Gato</label>
-                <label style="font-size: 18px;"><input type="checkbox" style="height: 12px; width: 12px;margin-right: 4px;" name="conejo" value="conejo">Conejo</label>
-                <label style="font-size: 18px;"><input type="checkbox" style="height: 12px; width: 12px;margin-right: 4px;" name="ave" value="ave">Ave</label>
-                <label style="font-size: 18px;"><input type="checkbox" style="height: 12px; width: 12px;margin-right: 4px;" name="morrocoy" value="morrocoy">Morrocoy</label>
-                <label style="font-size: 18px;"><input type="checkbox" style="height: 12px; width: 12px;margin-right: 4px;" name="acuatico" value="acuatico">Acuático</label>
-                <label style="font-size: 18px;"><input type="checkbox" style="height: 12px; width: 12px;margin-right: 4px;" name="otro" value="otro">Otro</label>
-              <!--</select>
-            </div>
-            <div class="field" id="showotrasmascotas" style="display: none;">
-              <div class="label">¿Cuál?</div>
-              <input type="text" id="otramascota">
-            </div>
-            <div class="field" style="height: 100px;">
-              <div class="label">Necesidades de la Vivienda</div>
-              <input type="text" style="width: 100%;">
-            </div>
-            <div class="field btns">
-              <button class="prev-2 prev">Atrás</button>
-              <button type="submit" class="next-2 next" name="reg-vivienda.php">Siguiente</button>
-            </div>
-          </form>
-          </div>
-          <!--pag4-->
-          <!--
-          <div class="page">
-            <form action="reg-enfermedades.php" method="post">
-            <div class="title">Existe alguno de estos padecimientos en su núcleo familiar?</div>
-            <div class="field">
-              <div class="label">Cáncer</div>
-              <select id="cancer" name="cancer">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">VIH</div>
-              <select id="vih" name="vih">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Sida</div>
-              <select id="sida" name="sida">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Diabetes</div>
-              <select id="diabetes" name="diabetes">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Hepatitis</div>
-              <select id="hepatitis" name="hepatitis">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Leucemia</div>
-              <select id="leucemia" name="leucemia">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Epilepsia</div>
-              <select id="epilepsia" name="epilepsia">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Asma</div>
-              <select id="asma" name="asma">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Hipertensión</div>
-              <select id="hipertension" name="hipertension">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Tuberculosis</div>
-              <select id="tuberculosis" name="tuberculosis">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Corazón</div>
-              <select id="corazon" name="corazon">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Otra Enfermedad</div>
-                <input type="text" id="otra_enfermedad" name="otra_enfermedad">
-            </div>
-            <div class="field btns">
-              <button class="prev-3 prev">Atrás</button>
-              <button type="submit" class="next-3 next" name="reg-enfermedades.php">Siguiente</button>
-            </div>
-          </form>
-          </div>
-          <!--pag5-->
-          <!--<div class="page">
-            <form action="reg-condiciones-vivienda.php" method="post">
-            <div class="title">Su vivienda cuenta con...</div>
-            <div class="field">
-              <div class="label">Aguas Blancas</div>
-              <select id="aguas_blancas" name="aguas_blancas">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Aguas Servidas</div>
-              <select id="aguas_servidas" name="aguas_servidas">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Tanque de Agua</div>
-              <select id="tanque_agua" name="tanque_agua">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Medidor de Agua</div>
-              <select id="medidor_agua" name="medidor_agua">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Electricidad</div>
-              <select id="electricidad" name="electricidad">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Medidor de Electricidad</div>
-              <select id="medidor_electricidad" name="medidor_electricidad">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Telefonía Fija</div>
-              <select id="telefonia_fija" name="telefonia_fija">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Internet</div>
-              <select id="internet" name="internet">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field" id="showinternet" style="display: none;">
-              <div class="label">Con que proveedor?</div>
-              <input type="text" name="proveedor_internet" id="proveedor_internet">
-            </div>
-            <div class="field">
-              <div class="label">Cable</div>
-              <select id="cable" name="cable">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field" id="showcable" style="display: none;">
-              <div class="label">Con que proveedor?</div>
-              <input type="text" id="proveedor_cable" name="proveedor_cable">
-            </div>
-            <div class="field">
-              <div class="label">Aseo Urbano</div>
-              <select id="aseo_urbano" name="aseo_urbano">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Gas Directo</div>
-              <select id="gas_directo" name="gas_directo">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Cilíndro</div>
-              <select id="cilindro" name="cilindro">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field" id="showcilindro" style="display: none;">
-              <div class="label">Tamaño del Cilíndro</div>
-              <select id="tamanio_cilindro" name="tamanio_cilindro">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="10">10</option>
-                <option value="18">18</option>
-                <option value="27">27</option>
-                <option value="43">43</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Alumbrado Público</div>
-              <select id="alumbrado_publico" name="alumbrado_publico">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field btns">
-              <button class="prev-4 prev">Atrás</button>
-              <button type="submit" class="next-4 next" name="reg-condiciones-vivienda.php">Siguiente</button>
-            </div>
-          </form>
-          </div>
-          <!--ultima pag-->
-          <!--<div class="page">
-            <form action="reg-participacion-social.php" method="post" >
-            <div class="title">Participación Social</div>
-            <div class="field">
-              <div class="label">Participa en alguna organizacion comunitaria?</div>
-              <select name="participacion_comunitaria" id="participacion_comunitaria">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label" name="organizacion_comunitaria" id="organizacion_comunitaria">Cual?</div>
-              <input type="text">
-            </div>
-            <div class="field">
-              <div class="label">Posee carnet del PSUV?</div>
-              <select name="carnet_psuv" id="carnet_psuv">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Introduzca su número de carnet</div>
-              <input type="number" name="numero_carnet_psuv" id="numero_carnet_psuv">
-            </div>
-            <div class="title">Recibe alguno de estos beneficios?</div>
-            <div class="field">
-              <div class="label">CLAP</div>
-              <select id="divclap" name="clap" id="clap">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field" id="showclap" style="display: none;">
-              <div class="label">Que cantidad recibe?</div>
-              <select name="clap" id="clap">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Bolsa de Nutrición</div>
-              <select id="bolsanutri">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field" id="showbolsanutri" style="display: none;">
-              <div class="label">Que cantidad recibe?</div>
-              <select name="clap" id="clap">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Hogares de la Patria</div>
-              <select name="hogares_patria" id="hogares_patria">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">José Gregorio Hernández</div>
-              <select name="jose_gregorio_hernandez" id="jose_gregorio_hernandez">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Parto Humanizado</div>
-              <select name="parto_humanizado" id="parto_humanizado">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Lactancia Materna</div>
-              <select id="lactancia_materna" name="lactancia_materna">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Escolarización</div>
-              <select id="escolarizacion" name="escolarizacion">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Economía Familiar</div>
-              <select id="economia_familiar" name="economia_familiar">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Chamba Juvenil</div>
-              <select id="chamba_juvenil" name="chamba_juvenil">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Amor Mayor</div>
-              <select id="amor_mayor" name="amor_mayor">
-                <option selected="true" disabled="disabled">Seleccione</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <div class="label">Otro Beneficios</div>
-              <input type="text" id="otro_beneficio" name="otro_beneficio">
-            </div>
-            <div class="field">
-              <div class="label">Observaciones</div>
-              <input type="text" style="height: 50px;" id="observaciones" name="observaciones"> <br>
-            </div>
-
-            <div class="field btns">
-              <button class="prev-5 prev">Atrás</button>
-              <button class="" type="submit" name="reg-participacion-social.php">Guardar</button>
-            </div>
-          </form>
-        </div>-->
+        <div class="check fas fa-check"></div>
+      </div>
+      <div class="step">
+        <p class="previ-4 prev">Enfermedades</p>
+        <div class="bullet">
+          <span>4</span>
+        </div>
+        <div class="check fas fa-check"></div>
+      </div>
+      <div class="step">
+        <p class="previ-5 prev">Condiciones de la vivienda</p>
+        <div class="bullet">
+          <span>5</span>
+        </div>
+        <div class="check fas fa-check"></div>
+      </div>
+      <div class="step">
+        <p class="nexti-4 next">Participación Social</p>
+        <div class="bullet">
+          <span>6</span>
+        </div>
+        <div class="check fas fa-check"></div>
       </div>
     </div>
-    <script src="script.js"></script>
-  </body>
+    <!-- form-->
+    <div class="form-outer">
+      <div class="page slide-page">
+        <form action="#" name="jose_leonardo_chirino" method="post">
+          <div class="title">Jefe de Familia</div>
+          <div class="field">
+            <div class="label" >Nombre(s)</div>
+            <input type="text" name="nombre" id="nombre" autofocus>
+          </div>
+          <div class="field">
+            <div class="label" >Apellido(s)</div>
+            <input type="text" name="apellido" id="apellido">
+          </div>
+          <div class="field">
+            <div class="label">Número de Cédula</div>
+            <input type="number" name="cedula" id="cedula">
+          </div>
+          <div class="field">
+            <div class="label">Género</div>
+            <select id="genero" name="genero" multiple multiselect-search="true">
+
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Código del Carnet de la patria</div>
+            <input type="number" name="codigo_carnet" id="codigo_carnet">
+          </div>
+          <div class="field">
+            <div class="label">Serial del Carnet de la patria </div>
+            <input type="number" name="serial_carnet" id="serial_carnet">
+          </div>
+          <div class="field">
+            <div class="label" >Número de Teléfono</div>
+            <input type="tel" name="numero_telefono" id="numero_telefono">
+          </div>
+          <div class="field">
+            <div class="label">Número de Teléfono de Habitación</div>
+            <input type="tel" name="numero_telefonocasa">
+          </div>
+          <div class="field">
+            <div class="label">Fecha de Nacimiento</div>
+            <input type="datetime-local" name="fecha_nacimiento" id="fecha_nacimiento">
+          </div>
+          <div class="field">
+            <div class="label">Correo electrónico</div>
+            <input type="email" name="correo" id="correo">
+          </div>
+          <div class="field">
+            <div class="label">Estado Civil</div>
+            <select id="estado_civil" name="estado_civil" multiple multiselect-search="true">
+
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Grado de Instrucción</div>
+            <select id="grado_instruccion" name="grado_instruccion" multiple multiselect-search="true">
+
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Sector donde trabaja</div>
+            <select id="sector_trabajo" name="sector_trabajo" multiple multiselect-search="true">
+
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Ocupación</div>
+            <input type="text" name="ocupacion" id="ocupacion">
+          </div>
+          <div class="field">
+            <div class="label">¿Es pensionado/a?</div>
+            <select id="pensionado" name="pensionado">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Si</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">¿Es discapacitado/a?</div>
+            <select id="discapacitado" name="discapacitado">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Si</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">¿Es incapacitado/a?</div>
+            <select id="incapacitado" name="incapacitado">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Si</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <div class="label">¿Se encuentra inscrito en el CNE?</div>
+            <select id="cne" name="cne">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Si</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">¿Realiza actividad comercial en la vivienda?</div>
+            <select id="actividad_vivienda" name="actividad_vivienda">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Si</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field" id="showactividadvivienda" style="display: none;">
+            <div class="label">¿Qué tipo de actividad realiza?</div>
+            <input type="text" name="tipo_actividad" id="tipo_actividad">
+          </div>
+          <div class="field">
+            <div class="label">¿Cuántas cargas familiares tiene?</div>
+            <sinput type="number" id="cargas_familiares" class="cargas_familiares" name="cargas_familiares">
+          </div>
+          <div class="field">
+            <button type="submit" class="firstNext next" name="reg-jefe.php">Siguiente</button>
+          </div>
+        </form>
+      </div>
+      <!--pag2
+      <div class="page"> 
+        <div id="primeracargapage" style="display: none;">
+          <form action="reg-carga.php" method="post">
+            <div class="title">Primera Carga Familiar</div>
+            <div class="field">
+              <div class="label">Nombre(s)</div>
+              <input type="text" id="nombre_carga" name="nombre_carga" autofocus>
+            </div>
+            <div class="field">
+              <div class="label">Apellido(s)</div>
+              <input type="text" id="apellido_carga" name="apellido_carga">
+            </div>
+            <div class="field">
+              <div class="label">Género</div>
+              <select id="genero_carga" name="genero_carga">
+                <option selected="true" disabled="disabled">Seleccione</option>
+                <option value="femenino">Femenino</option>
+                <option value="masculino">Masculino</option>
+              </select>
+            </div>
+            <div class="field">
+              <div class="label">Número de Cédula</div>
+              <input type="number" id="cedula_carga"name="cedula_carga">
+            </div>
+            <div class="field">
+              <div class="label">Fecha de Nacimiento</div>
+              <input type="datetime-local" id="fecha_nacimiento_carga"name="fecha_nacimiento_carga">
+            </div>
+            <div class="field">
+              <div class="label">Discapacidad</div>
+              <select id="discapacitado_carga"Name="discapacitado_carga">
+                <option selected="true" disabled="disabled">Seleccione</option>
+                <option value="si">Sí</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+            <div class="field">
+              <div class="label">Incapacidad</div>
+              <select id="incapacitado_carga"name="incapacitado_carga">
+                <option selected="true" disabled="disabled">Seleccione</option>
+                <option value="si">Sí</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+            <div class="field">
+              <div class="label">Embarazo Temprano?</div>
+              <select id="embarazo_temprano_carga" name="embarazo_temprano_carga">
+                <option selected="true" disabled="disabled">Seleccione</option>
+                <option value="si">Sí</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+            <div class="field">
+              <div class="label">Parentesco</div>
+              <select id="parentesco_carga"name="parentesco_carga" multiple multiselect-search="true">
+
+              </select>
+            </div>
+            <div class="field">
+              <div class="label">Grado de Instrucción</div>
+              <select id="instruccion_carga"name="instruccion_carga" multiple multiselect-search="true">
+
+              </select>
+            </div>
+            <div class="field">
+              <div class="label">Profesión?</div>
+              <input type="text" id="profesion_carga"name="profesion_carga">
+            </div>
+            <div class="field">
+              <div class="label">Ingreso Mensual</div>
+              <input type="number" id="ingreso_carga"name="ingreso_carga">
+            </div>
+            <div class="field">
+              <div class="label">Inscrita/o en el CNE?</div>
+              <select id="cne_carga"name="cne_carga">
+                <option selected="true" disabled="disabled">Seleccione</option>
+                <option value="si">Sí</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+            <div class="field">
+              <div class="label">Pensionada/o?</div>
+              <select id="pensionado_carga" name="pensionado_carga">
+                <option selected="true" disabled="disabled">Seleccione</option>
+                <option value="si">Sí</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+            <div class="field">
+              <div class="label">Posee carnet de la Patria?</div>
+                <select id="carnet_carga" name="carnet_carga">
+                <option selected="true" disabled="disabled">Seleccione</option>
+                <option value="si">Sí</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+            <div class="field" id="showcargacarnetcod" style="display: none;">
+              <div class="label" ">Código del Carnet de la patria</div>
+              <input type="number" id="codigo_carnet_carga" name="codigo_carnet_carga">
+            </div>
+            <div class="field" id="showcargacarnetser" style="display: none;">
+              <div class="label" >Serial del Carnet de la patria </div>
+              <input type="number" id="serial_carnet_carga" name="serial_carnet_carga">
+            </div>
+            <div class="field btns">
+              <button type="submit" name="reg-carga.php" class="save-carga">Guardar</button>
+            </div>
+          </form>   
+        </div>
+
+        <div id="segundacargapage" style="display: none;">
+          <form action="reg-carga.php" method="post">
+          <div class="title">Segunda Carga Familiar</div>
+          <div class="field">
+            <div class="label">Nombre(s)</div>
+            <input type="text" id="nombre_carga" name="nombre_carga" autofocus>
+          </div>
+          <div class="field">
+            <div class="label">Apellido(s)</div>
+            <input type="text" id="apellido_carga" name="apellido_carga">
+          </div>
+          <div class="field">
+            <div class="label">Género</div>
+            <select id="genero_carga" name="genero_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="femenino">Femenino</option>
+              <option value="masculino">Masculino</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Número de Cédula</div>
+            <input type="number" id="cedula_carga"name="cedula_carga">
+          </div>
+          <div class="field">
+            <div class="label">Fecha de Nacimiento</div>
+            <input type="datetime-local" id="fecha_nacimiento_carga"name="fecha_nacimiento_carga">
+          </div>
+          <div class="field">
+            <div class="label">Discapacidad</div>
+            <select id="discapacitado_carga"Name="discapacitado_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Incapacidad</div>
+            <select id="incapacitado_carga"name="incapacitado_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Embarazo Temprano?</div>
+            <select id="embarazo_temprano_carga" name="embarazo_temprano_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Parentesco</div>
+            <select id="parentesco_carga"name="parentesco_carga" multiple multiselect-search="true">
+
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Grado de Instrucción</div>
+            <select id="instruccion_carga"name="instruccion_carga" multiple multiselect-search="true">
+
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Profesión?</div>
+            <input type="text" id="profesion_carga"name="profesion_carga">
+          </div>
+          <div class="field">
+            <div class="label">Ingreso Mensual</div>
+            <input type="number" id="ingreso_carga"name="ingreso_carga">
+          </div>
+          <div class="field">
+            <div class="label">Inscrita/o en el CNE?</div>
+            <select id="cne_carga"name="cne_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Pensionada/o?</div>
+            <select id="pensionado_carga" name="pensionado_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Posee carnet de la Patria?</div>
+              <select id="carnet_carga" name="carnet_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field" id="showcargacarnetcod" style="display: none;">
+            <div class="label" ">Código del Carnet de la patria</div>
+            <input type="number" id="codigo_carnet_carga" name="codigo_carnet_carga">
+          </div>
+          <div class="field" id="showcargacarnetser" style="display: none;">
+            <div class="label" >Serial del Carnet de la patria </div>
+            <input type="number" id="serial_carnet_carga" name="serial_carnet_carga">
+          </div>
+          <div class="field btns">
+            <button type="submit" name="reg-carga.php" class="save-carga">Guardar</button>
+          </div>
+          </form>
+        </div>
+
+        <div id="terceracargapage" style="display: none;">
+          <form action="reg-carga.php" method="post">
+          <div class="title">Tercera Carga Familiar</div>
+          <div class="field">
+            <div class="label">Nombre(s)</div>
+            <input type="text" id="nombre_carga" name="nombre_carga" autofocus>
+          </div>
+          <div class="field">
+            <div class="label">Apellido(s)</div>
+            <input type="text" id="apellido_carga" name="apellido_carga">
+          </div>
+          <div class="field">
+            <div class="label">Género</div>
+            <select id="genero_carga" name="genero_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="femenino">Femenino</option>
+              <option value="masculino">Masculino</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Número de Cédula</div>
+            <input type="number" id="cedula_carga"name="cedula_carga">
+          </div>
+          <div class="field">
+            <div class="label">Fecha de Nacimiento</div>
+            <input type="datetime-local" id="fecha_nacimiento_carga"name="fecha_nacimiento_carga">
+          </div>
+          <div class="field">
+            <div class="label">Discapacidad</div>
+            <select id="discapacitado_carga"Name="discapacitado_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Incapacidad</div>
+            <select id="incapacitado_carga"name="incapacitado_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Embarazo Temprano?</div>
+            <select id="embarazo_temprano_carga" name="embarazo_temprano_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Parentesco</div>
+            <select id="parentesco_carga"name="parentesco_carga" multiple multiselect-search="true">
+
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Grado de Instrucción</div>
+            <select id="instruccion_carga"name="instruccion_carga" multiple multiselect-search="true">
+
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Profesión?</div>
+            <input type="text" id="profesion_carga"name="profesion_carga">
+          </div>
+          <div class="field">
+            <div class="label">Ingreso Mensual</div>
+            <input type="number" id="ingreso_carga"name="ingreso_carga">
+          </div>
+          <div class="field">
+            <div class="label">Inscrita/o en el CNE?</div>
+            <select id="cne_carga"name="cne_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Pensionada/o?</div>
+            <select id="pensionado_carga" name="pensionado_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Posee carnet de la Patria?</div>
+              <select id="carnet_carga" name="carnet_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field" id="showcargacarnetcod" style="display: none;">
+            <div class="label" ">Código del Carnet de la patria</div>
+            <input type="number" id="codigo_carnet_carga" name="codigo_carnet_carga">
+          </div>
+          <div class="field" id="showcargacarnetser" style="display: none;">
+            <div class="label" >Serial del Carnet de la patria </div>
+            <input type="number" id="serial_carnet_carga" name="serial_carnet_carga">
+          </div>
+          <div class="field btns">
+            <button type="submit" name="reg-carga.php" class="save-carga">Guardar</button>
+          </div>
+          </form>
+        </div>
+
+        <div id="cuartacargapage" style="display: none;">
+          <form action="reg-carga.php" method="post">
+          <div class="field">
+            <div class="label">Nombre(s)</div>
+            <input type="text" id="nombre_carga" name="nombre_carga" autofocus>
+          </div>
+          <div class="field">
+            <div class="label">Apellido(s)</div>
+            <input type="text" id="apellido_carga" name="apellido_carga">
+          </div>
+          <div class="field">
+            <div class="label">Género</div>
+            <select id="genero_carga" name="genero_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="femenino">Femenino</option>
+              <option value="masculino">Masculino</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Número de Cédula</div>
+            <input type="number" id="cedula_carga"name="cedula_carga">
+          </div>
+          <div class="field">
+            <div class="label">Fecha de Nacimiento</div>
+            <input type="datetime-local" id="fecha_nacimiento_carga"name="fecha_nacimiento_carga">
+          </div>
+          <div class="field">
+            <div class="label">Discapacidad</div>
+            <select id="discapacitado_carga"Name="discapacitado_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Incapacidad</div>
+            <select id="incapacitado_carga"name="incapacitado_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Embarazo Temprano?</div>
+            <select id="embarazo_temprano_carga" name="embarazo_temprano_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Parentesco</div>
+            <select id="parentesco_carga"name="parentesco_carga" multiple multiselect-search="true">
+
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Grado de Instrucción</div>
+            <select id="instruccion_carga"name="instruccion_carga" multiple multiselect-search="true">
+
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Profesión?</div>
+            <input type="text" id="profesion_carga"name="profesion_carga">
+          </div>
+          <div class="field">
+            <div class="label">Ingreso Mensual</div>
+            <input type="number" id="ingreso_carga"name="ingreso_carga">
+          </div>
+          <div class="field">
+            <div class="label">Inscrita/o en el CNE?</div>
+            <select id="cne_carga"name="cne_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Pensionada/o?</div>
+            <select id="pensionado_carga" name="pensionado_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Posee carnet de la Patria?</div>
+              <select id="carnet_carga" name="carnet_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field" id="showcargacarnetcod" style="display: none;">
+            <div class="label" ">Código del Carnet de la patria</div>
+            <input type="number" id="codigo_carnet_carga" name="codigo_carnet_carga">
+          </div>
+          <div class="field" id="showcargacarnetser" style="display: none;">
+            <div class="label" >Serial del Carnet de la patria </div>
+            <input type="number" id="serial_carnet_carga" name="serial_carnet_carga">
+          </div>
+          <div class="field btns">
+            <button type="submit" name="reg-carga.php" class="save-carga">Guardar</button>
+          </div>
+          </form>
+        </div>
+
+        <div id="quintacargapage" style="display: none;">
+          <form action="reg-carga.php" method="post">
+          <div class="title">Quinta Carga Familiar</div>
+          <div class="field">
+            <div class="label">Nombre(s)</div>
+            <input type="text" id="nombre_carga" name="nombre_carga" autofocus>
+          </div>
+          <div class="field">
+            <div class="label">Apellido(s)</div>
+            <input type="text" id="apellido_carga" name="apellido_carga">
+          </div>
+          <div class="field">
+            <div class="label">Género</div>
+            <select id="genero_carga" name="genero_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="femenino">Femenino</option>
+              <option value="masculino">Masculino</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Número de Cédula</div>
+            <input type="number" id="cedula_carga"name="cedula_carga">
+          </div>
+          <div class="field">
+            <div class="label">Fecha de Nacimiento</div>
+            <input type="datetime-local" id="fecha_nacimiento_carga"name="fecha_nacimiento_carga">
+          </div>
+          <div class="field">
+            <div class="label">Discapacidad</div>
+            <select id="discapacitado_carga"Name="discapacitado_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Incapacidad</div>
+            <select id="incapacitado_carga"name="incapacitado_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Embarazo Temprano?</div>
+            <select id="embarazo_temprano_carga" name="embarazo_temprano_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Parentesco</div>
+            <select id="parentesco_carga"name="parentesco_carga" multiple multiselect-search="true">
+
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Grado de Instrucción</div>
+            <select id="instruccion_carga"name="instruccion_carga" multiple multiselect-search="true">
+
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Profesión?</div>
+            <input type="text" id="profesion_carga"name="profesion_carga">
+          </div>
+          <div class="field">
+            <div class="label">Ingreso Mensual</div>
+            <input type="number" id="ingreso_carga"name="ingreso_carga">
+          </div>
+          <div class="field">
+            <div class="label">Inscrita/o en el CNE?</div>
+            <select id="cne_carga"name="cne_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Pensionada/o?</div>
+            <select id="pensionado_carga" name="pensionado_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Posee carnet de la Patria?</div>
+              <select id="carnet_carga" name="carnet_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field" id="showcargacarnetcod" style="display: none;">
+            <div class="label" ">Código del Carnet de la patria</div>
+            <input type="number" id="codigo_carnet_carga" name="codigo_carnet_carga">
+          </div>
+          <div class="field" id="showcargacarnetser" style="display: none;">
+            <div class="label" >Serial del Carnet de la patria </div>
+            <input type="number" id="serial_carnet_carga" name="serial_carnet_carga">
+          </div>
+          <div class="field btns">
+            <button type="submit" name="reg-carga.php" class="save-carga">Guardar</button>
+          </div>
+          </form>
+        </div>
+
+        <div id="sextacargapage" style="display: none;">
+          <form action="reg-carga.php" method="post">
+          <div class="title">Sexta Carga Familiar</div>
+          <div class="field">
+            <div class="label">Nombre(s)</div>
+            <input type="text" id="nombre_carga" name="nombre_carga" autofocus>
+          </div>
+          <div class="field">
+            <div class="label">Apellido(s)</div>
+            <input type="text" id="apellido_carga" name="apellido_carga">
+          </div>
+          <div class="field">
+            <div class="label">Género</div>
+            <select id="genero_carga" name="genero_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="femenino">Femenino</option>
+              <option value="masculino">Masculino</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Número de Cédula</div>
+            <input type="number" id="cedula_carga"name="cedula_carga">
+          </div>
+          <div class="field">
+            <div class="label">Fecha de Nacimiento</div>
+            <input type="datetime-local" id="fecha_nacimiento_carga"name="fecha_nacimiento_carga">
+          </div>
+          <div class="field">
+            <div class="label">Discapacidad</div>
+            <select id="discapacitado_carga"Name="discapacitado_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Incapacidad</div>
+            <select id="incapacitado_carga"name="incapacitado_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Embarazo Temprano?</div>
+            <select id="embarazo_temprano_carga" name="embarazo_temprano_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Parentesco</div>
+            <select id="parentesco_carga"name="parentesco_carga" multiple multiselect-search="true">
+
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Grado de Instrucción</div>
+            <select id="instruccion_carga"name="instruccion_carga" multiple multiselect-search="true">
+
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Profesión?</div>
+            <input type="text" id="profesion_carga"name="profesion_carga">
+          </div>
+          <div class="field">
+            <div class="label">Ingreso Mensual</div>
+            <input type="number" id="ingreso_carga"name="ingreso_carga">
+          </div>
+          <div class="field">
+            <div class="label">Inscrita/o en el CNE?</div>
+            <select id="cne_carga"name="cne_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Pensionada/o?</div>
+            <select id="pensionado_carga" name="pensionado_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Posee carnet de la Patria?</div>
+              <select id="carnet_carga" name="carnet_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field" id="showcargacarnetcod" style="display: none;">
+            <div class="label" ">Código del Carnet de la patria</div>
+            <input type="number" id="codigo_carnet_carga" name="codigo_carnet_carga">
+          </div>
+          <div class="field" id="showcargacarnetser" style="display: none;">
+            <div class="label" >Serial del Carnet de la patria </div>
+            <input type="number" id="serial_carnet_carga" name="serial_carnet_carga">
+          </div>
+          <div class="field btns">
+            <button type="submit" name="reg-carga.php" class="save-carga">Guardar</button>
+          </div>
+          </form>
+        </div>
+
+        <div id="septimacargapage" style="display: none;">
+          <form action="reg-carga.php" method="post">
+          <div class="title">Séptima Carga Familiar</div>
+          <div class="field">
+            <div class="label">Nombre(s)</div>
+            <input type="text" id="nombre_carga" name="nombre_carga" autofocus>
+          </div>
+          <div class="field">
+            <div class="label">Apellido(s)</div>
+            <input type="text" id="apellido_carga" name="apellido_carga">
+          </div>
+          <div class="field">
+            <div class="label">Género</div>
+            <select id="genero_carga" name="genero_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="femenino">Femenino</option>
+              <option value="masculino">Masculino</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Número de Cédula</div>
+            <input type="number" id="cedula_carga"name="cedula_carga">
+          </div>
+          <div class="field">
+            <div class="label">Fecha de Nacimiento</div>
+            <input type="datetime-local" id="fecha_nacimiento_carga"name="fecha_nacimiento_carga">
+          </div>
+          <div class="field">
+            <div class="label">Discapacidad</div>
+            <select id="discapacitado_carga"Name="discapacitado_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Incapacidad</div>
+            <select id="incapacitado_carga"name="incapacitado_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Embarazo Temprano?</div>
+            <select id="embarazo_temprano_carga" name="embarazo_temprano_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Parentesco</div>
+            <select id="parentesco_carga"name="parentesco_carga" multiple multiselect-search="true">
+
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Grado de Instrucción</div>
+            <select id="instruccion_carga"name="instruccion_carga" multiple multiselect-search="true">
+
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Profesión?</div>
+            <input type="text" id="profesion_carga"name="profesion_carga">
+          </div>
+          <div class="field">
+            <div class="label">Ingreso Mensual</div>
+            <input type="number" id="ingreso_carga"name="ingreso_carga">
+          </div>
+          <div class="field">
+            <div class="label">Inscrita/o en el CNE?</div>
+            <select id="cne_carga"name="cne_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Pensionada/o?</div>
+            <select id="pensionado_carga" name="pensionado_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Posee carnet de la Patria?</div>
+              <select id="carnet_carga" name="carnet_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field" id="showcargacarnetcod" style="display: none;">
+            <div class="label" ">Código del Carnet de la patria</div>
+            <input type="number" id="codigo_carnet_carga" name="codigo_carnet_carga">
+          </div>
+          <div class="field" id="showcargacarnetser" style="display: none;">
+            <div class="label" >Serial del Carnet de la patria </div>
+            <input type="number" id="serial_carnet_carga" name="serial_carnet_carga">
+          </div>
+          <div class="field btns">
+            <button type="submit" name="reg-carga.php" class="save-carga">Guardar</button>
+          </div>
+          </form>
+        </div>
+
+        <div id="octavacargapage" style="display: none;">
+          <form action="reg-carga.php" method="post">
+          <div class="title">Octava Carga Familiar</div>
+          <div class="field">
+            <div class="label">Nombre(s)</div>
+            <input type="text" id="nombre_carga" name="nombre_carga" autofocus>
+          </div>
+          <div class="field">
+            <div class="label">Apellido(s)</div>
+            <input type="text" id="apellido_carga" name="apellido_carga">
+          </div>
+          <div class="field">
+            <div class="label">Género</div>
+            <select id="genero_carga" name="genero_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="femenino">Femenino</option>
+              <option value="masculino">Masculino</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Número de Cédula</div>
+            <input type="number" id="cedula_carga"name="cedula_carga">
+          </div>
+          <div class="field">
+            <div class="label">Fecha de Nacimiento</div>
+            <input type="datetime-local" id="fecha_nacimiento_carga"name="fecha_nacimiento_carga">
+          </div>
+          <div class="field">
+            <div class="label">Discapacidad</div>
+            <select id="discapacitado_carga"Name="discapacitado_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Incapacidad</div>
+            <select id="incapacitado_carga"name="incapacitado_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Embarazo Temprano?</div>
+            <select id="embarazo_temprano_carga" name="embarazo_temprano_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Parentesco</div>
+            <select id="parentesco_carga"name="parentesco_carga" multiple multiselect-search="true">
+
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Grado de Instrucción</div>
+            <select id="instruccion_carga"name="instruccion_carga" multiple multiselect-search="true">
+
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Profesión?</div>
+            <input type="text" id="profesion_carga"name="profesion_carga">
+          </div>
+          <div class="field">
+            <div class="label">Ingreso Mensual</div>
+            <input type="number" id="ingreso_carga"name="ingreso_carga">
+          </div>
+          <div class="field">
+            <div class="label">Inscrita/o en el CNE?</div>
+            <select id="cne_carga"name="cne_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Pensionada/o?</div>
+            <select id="pensionado_carga" name="pensionado_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Posee carnet de la Patria?</div>
+              <select id="carnet_carga" name="carnet_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field" id="showcargacarnetcod" style="display: none;">
+            <div class="label" ">Código del Carnet de la patria</div>
+            <input type="number" id="codigo_carnet_carga" name="codigo_carnet_carga">
+          </div>
+          <div class="field" id="showcargacarnetser" style="display: none;">
+            <div class="label" >Serial del Carnet de la patria </div>
+            <input type="number" id="serial_carnet_carga" name="serial_carnet_carga">
+          </div>
+          <div class="field btns">
+            <button type="submit" name="reg-carga.php" class="save-carga">Guardar</button>
+          </div>
+        </form>
+        </div>
+
+        <div id="novenacargapage" style="display: none;">
+          <form action="reg-carga.php" method="post">
+          <div class="title">Novena Carga Familiar</div>
+          <div class="field">
+            <div class="label">Nombre(s)</div>
+            <input type="text" id="nombre_carga" name="nombre_carga" autofocus>
+          </div>
+          <div class="field">
+            <div class="label">Apellido(s)</div>
+            <input type="text" id="apellido_carga" name="apellido_carga">
+          </div>
+          <div class="field">
+            <div class="label">Género</div>
+            <select id="genero_carga" name="genero_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="femenino">Femenino</option>
+              <option value="masculino">Masculino</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Número de Cédula</div>
+            <input type="number" id="cedula_carga"name="cedula_carga">
+          </div>
+          <div class="field">
+            <div class="label">Fecha de Nacimiento</div>
+            <input type="datetime-local" id="fecha_nacimiento_carga"name="fecha_nacimiento_carga">
+          </div>
+          <div class="field">
+            <div class="label">Discapacidad</div>
+            <select id="discapacitado_carga"Name="discapacitado_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Incapacidad</div>
+            <select id="incapacitado_carga"name="incapacitado_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Embarazo Temprano?</div>
+            <select id="embarazo_temprano_carga" name="embarazo_temprano_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Parentesco</div>
+            <select id="parentesco_carga"name="parentesco_carga" multiple multiselect-search="true">
+
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Grado de Instrucción</div>
+            <select id="instruccion_carga"name="instruccion_carga" multiple multiselect-search="true">
+
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Profesión?</div>
+            <input type="text" id="profesion_carga"name="profesion_carga">
+          </div>
+          <div class="field">
+            <div class="label">Ingreso Mensual</div>
+            <input type="number" id="ingreso_carga"name="ingreso_carga">
+          </div>
+          <div class="field">
+            <div class="label">Inscrita/o en el CNE?</div>
+            <select id="cne_carga"name="cne_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Pensionada/o?</div>
+            <select id="pensionado_carga" name="pensionado_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Posee carnet de la Patria?</div>
+              <select id="carnet_carga" name="carnet_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field" id="showcargacarnetcod" style="display: none;">
+            <div class="label" ">Código del Carnet de la patria</div>
+            <input type="number" id="codigo_carnet_carga" name="codigo_carnet_carga">
+          </div>
+          <div class="field" id="showcargacarnetser" style="display: none;">
+            <div class="label" >Serial del Carnet de la patria </div>
+            <input type="number" id="serial_carnet_carga" name="serial_carnet_carga">
+          </div>
+          <div class="field btns">
+            <button type="submit" name="reg-carga.php" class="save-carga">Guardar</button>
+          </div>
+          </form>
+        </div>
+
+        <div id="decimacargapage" style="display: none;">
+          <form action="reg-carga.php" method="post">
+          <div class="title">Décima Carga Familiar</div>
+          <div class="field">
+            <div class="label">Nombre(s)</div>
+            <input type="text" id="nombre_carga" name="nombre_carga" autofocus>
+          </div>
+          <div class="field">
+            <div class="label">Apellido(s)</div>
+            <input type="text" id="apellido_carga" name="apellido_carga">
+          </div>
+          <div class="field">
+            <div class="label">Género</div>
+            <select id="genero_carga" name="genero_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="femenino">Femenino</option>
+              <option value="masculino">Masculino</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Número de Cédula</div>
+            <input type="number" id="cedula_carga"name="cedula_carga">
+          </div>
+          <div class="field">
+            <div class="label">Fecha de Nacimiento</div>
+            <input type="datetime-local" id="fecha_nacimiento_carga"name="fecha_nacimiento_carga">
+          </div>
+          <div class="field">
+            <div class="label">Discapacidad</div>
+            <select id="discapacitado_carga"Name="discapacitado_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Incapacidad</div>
+            <select id="incapacitado_carga"name="incapacitado_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Embarazo Temprano?</div>
+            <select id="embarazo_temprano_carga" name="embarazo_temprano_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Parentesco</div>
+            <select id="parentesco_carga"name="parentesco_carga" multiple multiselect-search="true">
+
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Grado de Instrucción</div>
+            <select id="instruccion_carga"name="instruccion_carga" multiple multiselect-search="true">
+
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Profesión?</div>
+            <input type="text" id="profesion_carga"name="profesion_carga">
+          </div>
+          <div class="field">
+            <div class="label">Ingreso Mensual</div>
+            <input type="number" id="ingreso_carga"name="ingreso_carga">
+          </div>
+          <div class="field">
+            <div class="label">Inscrita/o en el CNE?</div>
+            <select id="cne_carga"name="cne_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Pensionada/o?</div>
+            <select id="pensionado_carga" name="pensionado_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Posee carnet de la Patria?</div>
+              <select id="carnet_carga" name="carnet_carga">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field" id="showcargacarnetcod" style="display: none;">
+            <div class="label">Código del Carnet de la patria</div>
+            <input type="number" id="codigo_carnet_carga" name="codigo_carnet_carga">
+          </div>
+          <div class="field" id="showcargacarnetser" style="display: none;">
+            <div class="label" >Serial del Carnet de la patria </div>
+            <input type="number" id="serial_carnet_carga" name="serial_carnet_carga">
+          </div>
+          <div class="field btns">
+            <button type="submit" name="reg-carga.php" class="save-carga">Guardar</button>
+          </div>
+          </form>
+        </div>
+        
+        <div class="field btns">
+          <button class="prev-1 prev">Atrás</button>
+          <button type="submit" class="next-1 next">Siguiente</button>
+        </div>
+      </div>
+        <!--pag3-->
+        <!--<div class="page">
+        <form action="reg-vivienda.php" method="post">
+          <div class="title">Datos de la Vivienda</div>
+          <div class="field">
+            <div class="label">Condiciones del Terreno</div>
+            <input type="text" required autofocus>
+          </div>
+          <div class="field">
+            <div class="label">Forma de Tenencia</div>
+            <input type="text" required>
+          </div>
+          <div class="field">
+            <div class="label">Tipo de Vivienda</div>
+            <input type="text" required>
+          </div>
+          <div class="field">
+            <div class="label">Cuántas habitaciones tiene?</div>
+            <select id="habitaciones" name="habitaciones" required>
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Condiciones de la Vivienda</div>
+            <select id="condiciones_vivienda" name="condiciones_vivienda" required>
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="bloque">De Bloque</option>
+              <option value="lata">De Lata </option>
+              <option value="madera">De Madera</option>
+              <option value="barro">De Barro</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Tienes mascotas?</div>
+            <select id="masc" required>
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field" id="showmascotas" style="display: none;">
+            <div class="label">Tipo de Mascota(s)</div>
+            <!--<select id="mascotas" name="mascotas" multiple>
+              <label style="font-size: 18px;"><input type="checkbox" style="height: 12px; width: 12px;margin-right: 4px;" name="perro" value="perro">Perro</label>
+              <label style="font-size: 18px;"><input type="checkbox" style="height: 12px; width: 12px;margin-right: 4px;" name="gato" value="gato">Gato</label>
+              <label style="font-size: 18px;"><input type="checkbox" style="height: 12px; width: 12px;margin-right: 4px;" name="conejo" value="conejo">Conejo</label>
+              <label style="font-size: 18px;"><input type="checkbox" style="height: 12px; width: 12px;margin-right: 4px;" name="ave" value="ave">Ave</label>
+              <label style="font-size: 18px;"><input type="checkbox" style="height: 12px; width: 12px;margin-right: 4px;" name="morrocoy" value="morrocoy">Morrocoy</label>
+              <label style="font-size: 18px;"><input type="checkbox" style="height: 12px; width: 12px;margin-right: 4px;" name="acuatico" value="acuatico">Acuático</label>
+              <label style="font-size: 18px;"><input type="checkbox" style="height: 12px; width: 12px;margin-right: 4px;" name="otro" value="otro">Otro</label>
+            <!--</select>
+          </div>
+          <div class="field" id="showotrasmascotas" style="display: none;">
+            <div class="label">¿Cuál?</div>
+            <input type="text" id="otramascota">
+          </div>
+          <div class="field" style="height: 100px;">
+            <div class="label">Necesidades de la Vivienda</div>
+            <input type="text" style="width: 100%;">
+          </div>
+          <div class="field btns">
+            <button class="prev-2 prev">Atrás</button>
+            <button type="submit" class="next-2 next" name="reg-vivienda.php">Siguiente</button>
+          </div>
+        </form>
+        </div>
+        <!--pag4-->
+        <!--
+        <div class="page">
+          <form action="reg-enfermedades.php" method="post">
+          <div class="title">Existe alguno de estos padecimientos en su núcleo familiar?</div>
+          <div class="field">
+            <div class="label">Cáncer</div>
+            <select id="cancer" name="cancer">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">VIH</div>
+            <select id="vih" name="vih">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Sida</div>
+            <select id="sida" name="sida">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Diabetes</div>
+            <select id="diabetes" name="diabetes">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Hepatitis</div>
+            <select id="hepatitis" name="hepatitis">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Leucemia</div>
+            <select id="leucemia" name="leucemia">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Epilepsia</div>
+            <select id="epilepsia" name="epilepsia">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Asma</div>
+            <select id="asma" name="asma">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Hipertensión</div>
+            <select id="hipertension" name="hipertension">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Tuberculosis</div>
+            <select id="tuberculosis" name="tuberculosis">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Corazón</div>
+            <select id="corazon" name="corazon">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Otra Enfermedad</div>
+              <input type="text" id="otra_enfermedad" name="otra_enfermedad">
+          </div>
+          <div class="field btns">
+            <button class="prev-3 prev">Atrás</button>
+            <button type="submit" class="next-3 next" name="reg-enfermedades.php">Siguiente</button>
+          </div>
+        </form>
+        </div>
+        <!--pag5-->
+        <!--<div class="page">
+          <form action="reg-condiciones-vivienda.php" method="post">
+          <div class="title">Su vivienda cuenta con...</div>
+          <div class="field">
+            <div class="label">Aguas Blancas</div>
+            <select id="aguas_blancas" name="aguas_blancas">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Aguas Servidas</div>
+            <select id="aguas_servidas" name="aguas_servidas">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Tanque de Agua</div>
+            <select id="tanque_agua" name="tanque_agua">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Medidor de Agua</div>
+            <select id="medidor_agua" name="medidor_agua">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Electricidad</div>
+            <select id="electricidad" name="electricidad">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Medidor de Electricidad</div>
+            <select id="medidor_electricidad" name="medidor_electricidad">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Telefonía Fija</div>
+            <select id="telefonia_fija" name="telefonia_fija">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Internet</div>
+            <select id="internet" name="internet">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field" id="showinternet" style="display: none;">
+            <div class="label">Con que proveedor?</div>
+            <input type="text" name="proveedor_internet" id="proveedor_internet">
+          </div>
+          <div class="field">
+            <div class="label">Cable</div>
+            <select id="cable" name="cable">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field" id="showcable" style="display: none;">
+            <div class="label">Con que proveedor?</div>
+            <input type="text" id="proveedor_cable" name="proveedor_cable">
+          </div>
+          <div class="field">
+            <div class="label">Aseo Urbano</div>
+            <select id="aseo_urbano" name="aseo_urbano">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Gas Directo</div>
+            <select id="gas_directo" name="gas_directo">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Cilíndro</div>
+            <select id="cilindro" name="cilindro">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field" id="showcilindro" style="display: none;">
+            <div class="label">Tamaño del Cilíndro</div>
+            <select id="tamanio_cilindro" name="tamanio_cilindro">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="10">10</option>
+              <option value="18">18</option>
+              <option value="27">27</option>
+              <option value="43">43</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Alumbrado Público</div>
+            <select id="alumbrado_publico" name="alumbrado_publico">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field btns">
+            <button class="prev-4 prev">Atrás</button>
+            <button type="submit" class="next-4 next" name="reg-condiciones-vivienda.php">Siguiente</button>
+          </div>
+        </form>
+        </div>
+        <!--ultima pag-->
+        <!--<div class="page">
+          <form action="reg-participacion-social.php" method="post" >
+          <div class="title">Participación Social</div>
+          <div class="field">
+            <div class="label">Participa en alguna organizacion comunitaria?</div>
+            <select name="participacion_comunitaria" id="participacion_comunitaria">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label" name="organizacion_comunitaria" id="organizacion_comunitaria">Cual?</div>
+            <input type="text">
+          </div>
+          <div class="field">
+            <div class="label">Posee carnet del PSUV?</div>
+            <select name="carnet_psuv" id="carnet_psuv">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Introduzca su número de carnet</div>
+            <input type="number" name="numero_carnet_psuv" id="numero_carnet_psuv">
+          </div>
+          <div class="title">Recibe alguno de estos beneficios?</div>
+          <div class="field">
+            <div class="label">CLAP</div>
+            <select id="divclap" name="clap" id="clap">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field" id="showclap" style="display: none;">
+            <div class="label">Que cantidad recibe?</div>
+            <select name="clap" id="clap">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Bolsa de Nutrición</div>
+            <select id="bolsanutri">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field" id="showbolsanutri" style="display: none;">
+            <div class="label">Que cantidad recibe?</div>
+            <select name="clap" id="clap">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Hogares de la Patria</div>
+            <select name="hogares_patria" id="hogares_patria">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">José Gregorio Hernández</div>
+            <select name="jose_gregorio_hernandez" id="jose_gregorio_hernandez">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Parto Humanizado</div>
+            <select name="parto_humanizado" id="parto_humanizado">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Lactancia Materna</div>
+            <select id="lactancia_materna" name="lactancia_materna">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Escolarización</div>
+            <select id="escolarizacion" name="escolarizacion">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Economía Familiar</div>
+            <select id="economia_familiar" name="economia_familiar">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Chamba Juvenil</div>
+            <select id="chamba_juvenil" name="chamba_juvenil">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Amor Mayor</div>
+            <select id="amor_mayor" name="amor_mayor">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Otro Beneficios</div>
+            <input type="text" id="otro_beneficio" name="otro_beneficio">
+          </div>
+          <div class="field">
+            <div class="label">Observaciones</div>
+            <input type="text" style="height: 50px;" id="observaciones" name="observaciones"> <br>
+          </div>
+
+          <div class="field btns">
+            <button class="prev-5 prev">Atrás</button>
+            <button class="" type="submit" name="reg-participacion-social.php">Guardar</button>
+          </div>
+        </form>
+      </div>-->
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>
