@@ -1864,67 +1864,67 @@ if ($result > 0) {
 
               <div class="field" id="showclap" style="display: none;">
                 <div class="label">Que cantidad recibe?</div>
-                <select name="cantidad_clap" id="cantidad_clap" value="<?php echo $cantidad_clap; ?>">
+                <select name="cantidad_clap" id="cantidad_clap" value="<?php echo $data['cantidad_clap']; ?>">
 
                 </select>
               </div>
 
               <div class="field">
                 <div class="label">Bolsa de Nutrición</div>
-                <input type="text" id="bolsa_nutri" name="bolsa_nutri" value="<?php echo $bolsa_nutri; ?>">
+                <input type="text" id="bolsa_nutri" name="bolsa_nutri" value="<?php echo $data['bolsa_nutri']; ?>">
               </div>
 
               <div class="field" id="showbolsanutri" style="display: none;">
                 <div class="label">Que cantidad recibe?</div>
-                <input type="number" name="cantidad_bolsa_nutri" id="cantidad_bolsa_nutri" value="<?php echo $cantidad_bolsa_nutri; ?>">
+                <input type="number" name="cantidad_bolsa_nutri" id="cantidad_bolsa_nutri" value="<?php echo $data['cantidad_bolsa_nutri']; ?>">
               </div>
 
               <div class="field">
                 <div class="label">Hogares de la Patria</div>
-                <input type="text" name="hogares_patria" id="hogares_patria" value="<?php echo $hogares_patria; ?>">
+                <input type="text" name="hogares_patria" id="hogares_patria" value="<?php echo $data['hogares_patria']; ?>">
               </div>
 
               <div class="field">
                 <div class="label">José Gregorio Hernández</div>
-                <input type="text" name="jose_gregorio_hernandez" id="jose_gregorio_hernandez" value="<?php echo $jose_gregorio_hernandez; ?>">
+                <input type="text" name="jose_gregorio_hernandez" id="jose_gregorio_hernandez" value="<?php echo $data['jose_gregorio_hernandez']; ?>">
               </div>
 
               <div class="field">
                 <div class="label">Parto Humanizado</div>
-                <input type="text" name="parto_humanizado" id="parto_humanizado" value="<?php echo $parto_humanizado; ?>">
+                <input type="text" name="parto_humanizado" id="parto_humanizado" value="<?php echo $data['parto_humanizado']; ?>">
               </div>
 
               <div class="field">
                 <div class="label">Lactancia Materna</div>
-                <input type="text" id="lactancia_materna" name="lactancia_materna" value="<?php echo $lactancia_materna; ?>">
+                <input type="text" id="lactancia_materna" name="lactancia_materna" value="<?php echo $data['lactancia_materna']; ?>">
               </div>
 
               <div class="field">
                 <div class="label">Escolarización</div>
-                <input type="text" id="escolarizacion" name="escolarizacion" value="<?php echo $escolarizacion; ?>">
+                <input type="text" id="escolarizacion" name="escolarizacion" value="<?php echo $data['escolarizacion']; ?>">
               </div>
 
               <div class="field">
                 <div class="label">Economía Familiar</div>
-                <input type="text" id="economia_familiar" name="economia_familiar" value="<?php echo $economia_familiar; ?>">
+                <input type="text" id="economia_familiar" name="economia_familiar" value="<?php echo $data['economia_familiar']; ?>">
               </div>
 
               <div class="field">
                 <div class="label">Chamba Juvenil</div>
-                <input type="text"id="chamba_juvenil" name="chamba_juvenil" value="<?php echo $chamba_juvenil; ?>">
+                <input type="text"id="chamba_juvenil" name="chamba_juvenil" value="<?php echo $data['chamba_juvenil']; ?>">
               </div>
 
               <div class="field">
                 <div class="label">Amor Mayor</div>
-                <input type="text" id="amor_mayor" name="amor_mayor" value="<?php echo $amor_mayor; ?>">
+                <input type="text" id="amor_mayor" name="amor_mayor" value="<?php echo $data['amor_mayor']; ?>">
               </div>
               <div class="field">
                 <div class="label">Otro</div>
-                <input type="text" id="otro_beneficio" name="otro_beneficio" value="<?php echo $otro_beneficio; ?>">
+                <input type="text" id="otro_beneficio" name="otro_beneficio" value="<?php echo $data['otro_beneficio']; ?>">
               </div>
               <div class="field">
                 <div class="label">Observaciones</div>
-                <input type="text" style="height: 50px;" id="observaciones_beneficio" name="observaciones_beneficio" value="<?php echo $observaciones_beneficio; ?>"> <br>
+                <input type="text" style="height: 50px;" id="observaciones_beneficio" name="observaciones_beneficio" value="<?php echo $data['observaciones_beneficio']; ?>"> <br>
               </div>
 
               <div class="field btns">
