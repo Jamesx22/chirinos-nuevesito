@@ -459,45 +459,45 @@ if ($result > 0) {
 
                 <div class="field">
                   <div class="label">Apellido(s)</div>
-                  <input type="text" id="apellido_carga" name="apellido_carga" value="<?php echo $data["apellido_carga"]; ?>">
+                  <input type="text" id="apellido_carga" name="apellido_carga" value="<?php echo $data['apellido_carga']; ?>">
                 </div>
 
                 <div class="field">
                   <div class="label">Género</div>
                   <select name="nombre_genero" id="nombre_genero">
-                      <?php echo $data['genero"]; ?>
+                      <?php echo $data['genero']; ?>
                   </select>
                 </div>
 
                 <div class="field">
                   <div class="label">Número de Cédula</div>
-                  <input type="number" id="cedula_carga"name="cedula_carga" value="<?php echo $data['cedula_carga"]; ?>">
+                  <input type="number" id="cedula_carga"name="cedula_carga" value="<?php echo $data['cedula_carga']; ?>">
                 </div>
 
                 <div class="field">
                   <div class="label">Fecha de Nacimiento</div>
-                  <input type="datetime-local" id="fecha_nacimiento_carga" name="fecha_nacimiento_carga" value="<?php echo $data['fecha_nacimiento_carga"]; ?>">
+                  <input type="datetime-local" id="fecha_nacimiento_carga" name="fecha_nacimiento_carga" value="<?php echo $data['fecha_nacimiento_carga']; ?>">
                 </div>
 
                 <div class="field">
                   <div class="label">Discapacidad</div>
-                  <input type="text" id="discapacitado_carga" Name="discapacitado_carga" value="<?php echo $data['discapacitado_carga"]; ?>">
+                  <input type="text" id="discapacitado_carga" Name="discapacitado_carga" value="<?php echo $data['discapacitado_carga']; ?>">
                 </div>
       <!-- agregar en variables-->
                 <div class="field">
                   <div class="label">Incapacidad</div>
-                  <input type="text" id="incapacitado_carga"name="incapacitado_carga" value="<?php echo $data['incapacitado_carga"]; ?>">
+                  <input type="text" id="incapacitado_carga"name="incapacitado_carga" value="<?php echo $data['incapacitado_carga']; ?>">
                 </div>
 
                 <div class="field">
                   <div class="label">Embarazo Temprano?</div>
-                  <input type="text" id="embarazo_temprano_carga" name="embarazo_temprano_carga" value="<?php echo $data['embarazo_temprano_carga"]; ?>">
+                  <input type="text" id="embarazo_temprano_carga" name="embarazo_temprano_carga" value="<?php echo $data['embarazo_temprano_carga']; ?>">
                 </div>
 
                 <div class="field">
                   <div class="label">Parentesco</div>
                   <select id="nombre" name="nombre">
-                      <?php echo $data['nombre_parentesco"]; ?>
+                      <?php echo $data['nombre_parentesco']; ?>
                   </select>
                 </div>
 
