@@ -114,12 +114,12 @@
 
   $sql2 = "INSERT INTO vivienda(condiciones_terreno, forma_tenencia, tipo_vivienda, habitaciones, id_condiciones_vivienda, tiene_mascotas, id_mascotas, necesidades_vivienda) VALUES ('$condiciones_terreno', '$forma_tenencia', '$tipo_vivienda', '$habitaciones', '$id_condiciones_vivienda', '$tiene_mascotas', '$id_mascotas', '$necesidades_vivienda')";
 
-  $sql3 = "INSERT INTO enfermedades(cancer, vih, sida, diabetes, hepatitis, leucemia, epilepsia, asma, hipertension, tuberculosis, corazon) VALUES ('$cancer', '$vih', '$sida', '$diabetes', '$hepatitis', '$leucemia', '$epilepsia', '$asma', '$hipertension', '$tuberculosis', '$corazon')";
+  $sql3 = "INSERT INTO enfermedades(cancer, vih, sida, diabetes, hepatitis, leucemia, epilepsia, asma, hipertension, tuberculosis, corazon, otra_enfermedad) VALUES ('$cancer', '$vih', '$sida', '$diabetes', '$hepatitis', '$leucemia', '$epilepsia', '$asma', '$hipertension', '$tuberculosis', '$corazon', '$otra_enfermedad')";
 
   $sql4 = "INSERT INTO condiciones_vivienda(aguas_blancas, aguas_servidas, tanque_agua, medidor_agua, electricidad, medidor_electricidad, telefonia_fija, internet, proveedor_internet, cable, proveedor_cable, aseo_urbano, gas_directo, alumbrado_publico, cilindro, tamano_cilindro,) VALUES ('$aguas_blancas', '$aguas_servidas', '$tanque_agua', '$medidor_agua', '$electricidad', '$medidor_electricidad', '$telefonia_fija', '$internet', '$proveedor_internet', '$cable', '$proveedor_cable', '$aseo_urbano', '$gas_directo', '$alumbrado_publico', '$cilindro', '$tamano_cilindro') ";
 
   $sql5 = "INSERT INTO participacion_social(organizacion_comunitaria, nombre_organizacion, carnet_psuv, codigo_carnet_psuv, clap, cantidad_clap, bolsa_nutricion, cantidad_bolsa_nutricion, hogares_patria, jose_gregorio_hernandez, parto_humanizado, lactancia_materna, escolarizacion, economia_familiar, chamba_juvenil, amor_mayor, otro_beneficio, observaciones,) VALUES ('$organizacion_comunitaria', '$nombre_organizacion', '$carnet_psuv', '$codigo_carnet_psuv', '$clap', '$cantidad_clap', '$bolsa_nutricion', '$cantidad_bolsa_nutricion', '$hogares_patria', '$jose_gregorio_hernandez', '$parto_humanizado', '$lactancia_materna', '$escolarizacion', '$economia_familiar', '$chamba_juvenil', '$amor_mayor', '$otro_beneficio', '$observaciones') ";
-
+  
 ?>
 
 <!DOCTYPE html>
@@ -1403,7 +1403,7 @@
         </div>
       </div>
         <!--pag3-->
-        <!--<div class="page">
+        <div class="page">
         <form action="reg-vivienda.php" method="post">
           <div class="title">Datos de la Vivienda</div>
           <div class="field">
@@ -1457,7 +1457,7 @@
               <label style="font-size: 18px;"><input type="checkbox" style="height: 12px; width: 12px;margin-right: 4px;" name="morrocoy" value="morrocoy">Morrocoy</label>
               <label style="font-size: 18px;"><input type="checkbox" style="height: 12px; width: 12px;margin-right: 4px;" name="acuatico" value="acuatico">Acuático</label>
               <label style="font-size: 18px;"><input type="checkbox" style="height: 12px; width: 12px;margin-right: 4px;" name="otro" value="otro">Otro</label>
-            <!--</select>
+            <!--</select>-->
           </div>
           <div class="field" id="showotrasmascotas" style="display: none;">
             <div class="label">¿Cuál?</div>
@@ -1474,7 +1474,6 @@
         </form>
         </div>
         <!--pag4-->
-        <!--
         <div class="page">
           <form action="reg-enfermedades.php" method="post">
           <div class="title">Existe alguno de estos padecimientos en su núcleo familiar?</div>
